@@ -8,10 +8,10 @@ function start(port) {
 }
 
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('Hello ');
 });
 app.get('/wrong', (req, res) => {
-  throw new Error('Something went wrong');
+  throw new Error('Something  wrong');
 });
 app.use('*', notFoundHandler);
 app.use(errorHandler);

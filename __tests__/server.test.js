@@ -9,7 +9,7 @@ const request = supertest(server.app);
 
 describe('API Server', () => {
   it('handles invalid requests', async () => {
-    const response = await request.get('/foo');
+    const response = await request.get('/every');
     expect(response.status).toEqual(404);
   });
   it('handles errors', async () => {
